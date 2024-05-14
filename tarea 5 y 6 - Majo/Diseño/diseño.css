@@ -1,0 +1,94 @@
+.container{
+    width: 1440px;
+    display: grid;
+    grid-template-areas: 'encabezado encabezado encabezado encabezado encabezado encabezado '
+    'uno uno uno uno uno uno '
+    'dos dos tres tres cuatro cuatro '
+    'cinco cinco cinco cinco cinco cinco'
+    'seis siete ocho nueve diez once '
+    'pie pie pie pie pie pie';
+    grid-template-rows: 400px 50px 250px 800px 240px 50px  ;
+}
+header {
+    grid-area: encabezado ;
+    background-color:palegreen;
+}
+.box1{
+    grid-area: uno ;
+    background-color:slategray;
+}
+.box2{
+    grid-area: dos ;
+    background-color:violet;
+}
+.box3{
+    grid-area: tres ;
+    background-color: rgb(109, 97, 68);
+}
+.box4{
+    grid-area: cuatro ;
+    background-color: rgb(14, 90, 167);
+
+}
+.box5{
+    grid-area: cinco ;
+    background-color: rgb(43, 37, 37);
+}
+.box6{
+    grid-area: seis;
+    background-color: rgb(162, 0, 255);
+}
+.box7{
+    grid-area: siete;
+    background-color: rgb(166, 255, 0);
+}
+.box8{
+    grid-area: ocho;
+    background-color: rgb(255, 0, 157);
+}
+.box9{
+    grid-area: nueve;
+    background-color: rgb(255, 51, 0);
+}
+.box10{
+    grid-area: diez;
+    background-color: rgb(0, 255, 242);
+}
+.box11{
+    grid-area: once;
+    background-color: rgb(255, 0, 0);
+}
+footer{
+    grid-area: pie;
+    background-color: rgb(50, 92, 134);
+}
+@media screen and (max-width: 1024px) {
+    .container{
+    grid-template-areas: 'encabezado encabezado encabezado encabezado encabezado encabezado '
+    'uno uno uno uno uno uno '
+    'dos dos dos tres tres tres '
+    'cuatro cuatro cuatro cuatro cuatro cuatro '
+    'cinco cinco cinco cinco cinco cinco '
+    'seis seis siete siete ocho ocho '
+    'nueve nueve diez diez once once '
+    'pie pie pie pie pie pie';
+    grid-template-rows: 200px 50px 250px 400px 140px 50px 50px 50px ;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .container{
+    grid-template-areas: 'encabezado encabezado '
+    'uno uno '
+    'dos dos '
+    'tres tres '
+    'cuatro cuatro '
+    'cinco cinco '
+    'seis siete'
+    'ocho nueve '
+    'diez once '
+    'pie pie ';
+    grid-template-rows: 200px 50px 100px 100px 100px 250px 150px 150px 150px 50px ;
+    }
+    
+}
